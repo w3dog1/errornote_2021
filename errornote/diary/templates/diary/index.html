@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error Report :: 오류 노트</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'diary/css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+<body>
+    <div class="wrap-intro">
+        <h1><img src="{% static 'diary/image/logo02.png' %}"></h1>
+        <p>각 프로젝트의 Error issue들을 모아 정리해 보세요.<br>
+            다 함께 공유된 note들을 확인하면서 트러블슈팅이 가능합니다.
+        </p>
+        <a href="{% url 'page-list' %}">에러 노트 바로 가기</a>
+    </div>
+</body>
+</html>
